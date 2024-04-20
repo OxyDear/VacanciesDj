@@ -1,0 +1,105 @@
+[
+{
+  "model": "course.city",
+  "pk": 1,
+  "fields": {
+    "name": "Минск",
+    "slug": "minsk"
+  }
+},
+{
+  "model": "course.city",
+  "pk": 4,
+  "fields": {
+    "name": "Барань",
+    "slug": "baran"
+  }
+},
+{
+  "model": "course.city",
+  "pk": 5,
+  "fields": {
+    "name": "Орша",
+    "slug": "orsha"
+  }
+},
+{
+  "model": "course.city",
+  "pk": 6,
+  "fields": {
+    "name": "Барановичи",
+    "slug": "baranocichi"
+  }
+},
+{
+  "model": "course.language",
+  "pk": 1,
+  "fields": {
+    "name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "course.language",
+  "pk": 2,
+  "fields": {
+    "name": "Java",
+    "slug": "Java"
+  }
+},
+{
+  "model": "course.language",
+  "pk": 3,
+  "fields": {
+    "name": "Rust",
+    "slug": "rust"
+  }
+},
+{
+  "model": "course.language",
+  "pk": 4,
+  "fields": {
+    "name": "Apex",
+    "slug": "apex"
+  }
+},
+{
+  "model": "course.vacancy",
+  "pk": 1,
+  "fields": {
+    "url": "https://iis.bsuir.by/login",
+    "title": "Developer",
+    "company": "Yandex",
+    "description": "Description",
+    "city": 1,
+    "language": 1,
+    "timestamp": "2024-04-02"
+  }
+},
+{
+  "model": "course.vacancy",
+  "pk": 2,
+  "fields": {
+    "url": "https://www.youtube.com",
+    "title": "Jaja Dev",
+    "company": "Dobri Ludi",
+    "description": "zdravstvuite",
+    "city": 5,
+    "language": 2,
+    "timestamp": "2024-04-03"
+  }
+},
+{
+  "model": "course.vacancy",
+  "pk": 3,
+  "fields": {
+    "url": "https://kinogo.inc/films/14338-chelovek-kotoryy-izmenil-vse-hd-dolby6-v3.html",
+    "title": "Baranovichi Apex Developer",
+    "company": "Cool Company",
+    "description": "Super duper cooler company with cool employees",
+    "city": 6,
+    "language": 4,
+    "timestamp": "2024-04-19"
+  }
+}
+]
