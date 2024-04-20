@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %} Vacancies {% endblock %}
+
+{% block content %}
+    {% for obj in object_list %}
+        <div class="card my-3">
+          <div class="card-header">
+            <a href="{{ obj.url }}"><span style="font-weight: bold">{{ obj.title }}</span></a>
+          </div>
+          <div class="card-body">
+              <h4>{{ obj.company }}</h4>
+            <p class="card-text">{{ obj.description }}</p>
+              <p> {{ obj.city.name }} | {{ obj.language.name }} |
+                  <small>{{ obj.timestamp|date:"d-m-Y" }}</small> </p>
+          </div>
+        </div>
+    {% empty %}
+        <div class="col-md-3 mx-auto my-3">
+            <h3> Nothing was found </h3>
+        </div>
+    {% endfor %}
+<form>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form>
+                <div class="form-group">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</form>
+{% endblock %}
