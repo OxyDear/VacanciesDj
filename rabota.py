@@ -28,7 +28,7 @@ def getContent(url):
     return browser.page_source
 
 
-getContent(url+'0')
+# getContent(url+'0')
 
 if src != '':
 
@@ -44,8 +44,8 @@ if src != '':
                     title = div.find('h3')
                     urlVac = title.find('a')['href']
                     company = 'No name'
-                    if div.find('div', class_='vacancy-serp-item-company'):
-                        company = div.find('div', class_='vacancy-serp-item-company').text
+                    if div.find('div', class_='vacancy-serp-item__meta-info-company'):
+                        company = div.find('div', class_='vacancy-serp-item__meta-info-company').text
                     resp = requests.get(url=urlVac, headers={'User-Agent': fk.random})
                     soupVac = bs(resp.text, 'html.parser')
                     content = 'Empty'
